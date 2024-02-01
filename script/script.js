@@ -21,32 +21,10 @@ $(document).ready(function () {
       delay: 2800,
       disableOnInteraction: false,
     },
-    // breakpoints: {
-    //   // در سایز تبلت، نمایش 2 محتوا
-    //   768: {
-    //     slidesPerView: 1,
-    //   },
-    //   // در سایز موبایل، نمایش 1 محتوا
-    //   480: {
-    //     slidesPerView: 3,
-    //   },
-    //   // در سایز دسکتاپ، نمایش 3 محتوا
-    //   1200: {
-    //     slidesPerView: 4,
-    //   },
-    // },
+
 
   });
 
-  // var swiper = new Swiper(".mySwiperFade", {
-  //   spaceBetween: 30,
-  //   slidesPerView: 1,
-  //   effect: "fade",
-  //   autoplay: {
-  //     delay: 2800,
-  //     disableOnInteraction: false,
-  //   },
-  // });
 
 
   // Our games
@@ -55,26 +33,15 @@ $(document).ready(function () {
   showCategory("ps4");
 
   $(".menu li").click(function () {
-    var targetCategory = $(this).data("category"); // دریافت داده دسته دکمه کلیک شده
-
-    // حذف کلاس "active" از تمام دکمه‌ها
+    var targetCategory = $(this).data("category"); 
     $(".menu li").removeClass("active");
-
-    // اضافه کردن کلاس "active" به دکمه کلیک شده
     $(this).addClass("active");
-
-    // مخفی کردن تمام دسته‌ها به جز دسته مربوط به دکمه کلیک شده
     $(".games .console").not("." + targetCategory + "-game").removeClass("show");
-
-    // نمایش دسته مربوط به دکمه کلیک شده
     showCategory(targetCategory);
   });
-
   function showCategory(category) {
     $("." + category + "-game").addClass("show");
   }
-
-
   var swiper = new Swiper(".pcSlider", {
     effect: "cards",
     grabCursor: true,
@@ -141,8 +108,6 @@ $(document).ready(function () {
   });
 
 
-
-
   // Navigation Bar
 
 
@@ -197,6 +162,4 @@ $(document).ready(function () {
       i = 1;
     }
   });
-
-
 });
