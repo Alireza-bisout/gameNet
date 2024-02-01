@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gameNet</title>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="script/jQuery.js"></script>
+
+    <!-- styles & bootstrap -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <!-- font icon -->
+    <script src="script/all.min.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="style/SwiperCss.css" />
+    <script src="script/swiperJs.js"></script>
+
+    <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Navgetion -->
+
+     <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top navgetion nav-hide" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="image/logo.png" class="mobile-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <svg class="barlogo" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24" xml:space="preserve"
+                    class="">
+                    <g>
+                        <path fill="#000000"
+                            d="M2 5a1 1 0 0 1 1-1h13a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm19 6H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2zm-9 7H3a1 1 0 1 0 0 2h9a1 1 0 1 0 0-2z"
+                            opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                </svg>
+                <svg class="xlogo" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 329.269 329"
+                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                    <g>
+                        <path
+                            d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">بازی ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">مسابقات</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link mx-2" href="#">
+                            <img src="image/logo.png" class="large-logo" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">خانه</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+
+    <!-- Header -->
+
+    <header id="bg-header">
+        <div class="bg d-flex align-items-center justify-content-center">
+            <div class="swiper mySwiperFade">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide game-bg">
+                        <img src="image/News/counterstrike2.jpg" />
+                    </div>
+                    <div class="swiper-slide game-bg">
+                        <img src="image/News/tekken8bg.jpg" />
+                    </div>
+                    <div class="swiper-slide game-bg">
+                        <img src="image/News/rdr.jpg" />
+                    </div>
+                    <div class="swiper-slide game-bg">
+                        <img src="image/News/mw2.jpg" />
+                    </div>
+                    <div class="swiper-slide game-bg">
+                        <img src="image/News/mortalkombat11bg.jpg" />
+                    </div>
+                    <div class="swiper-slide game-bg">
+                        <img src="image/News/spider-man.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradienta"></div>
+
+        <div class="title-site d-flex align-items-center justify-content-center">
+
+            <div class="glitch-wrapper">
+
+                <div class="glitch" data-text="Tekno GameCenter">
+                    <div class="nav-container-top"></div>Tekno GameCenter
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Header Slider Game -->
+    <div class="container">
+        <section id="header-slider-game" class="container-fluid">
+
+            <div class="row">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
+                            <div class="p-4 div-slider-card">
+
+                                <div class="slider-card row d-flex align-items-center justify-content-center">
+
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="img-hover">
+                                            <img src="image/tekken8.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-6">
+
+                                        <div class="content-slider-game">
+                                            <h3>Tekken 8</h3>
+                                            <div class="mt-3 view">بازدید : <span>180k</span></div>
+                                            <p class="mt-4">این بازی احتمالا آخرین نسخه از سری بازی tekken باشد.
+                                                هیهاچی میشما نیز در نسخه ی قبلی مرده و در این نسخه حضور ندارد. جون
+                                                کازاما که
+                                                Tekken دو
+                                                به بعد به خاطر داستان بازی حضور نداشت نیز در این نسخه حضور دارد
+                                            </p>
+                                            <div class="row mt-4">
+                                                <span class="col-12 col-md-6 game-creator">سازنده ی بازی :</span>
+                                                <span class="col-12 col-md-6 distance-small-screen">Bandai
+                                                    Namco</span>
+                                            </div>
+
+                                            <div
+                                                class="row go-to-post mt-4 d-flex align-items-center justify-content-center">
+                                                <span class="col-12 col-md-6">مشاهده تریلر :</span>
+                                                <a href="">
+                                                    <div
+                                                        class="col-12 col-md-6 btn-go-to-post distance-small-screen d-flex justify-content-center align-items-center">
+                                                        <span>نمایش</span>
+                                                        <i class="fa-solid fa-gamepad"></i>
+                                                        <div class="bg-hover-gradient"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="bg-slider-card"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class=" p-4 div-slider-card">
+
+                                <div class="slider-card row d-flex align-items-center justify-content-center">
+
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="img-hover">
+                                            <img src="image/efootball.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-6">
+
+                                        <div class="content-slider-game">
+                                            <h3>efootball</h3>
+                                            <div class="mt-3 view">بازدید : <span>180k</span></div>
+                                            <p class="mt-4">این بازی احتمالا آخرین نسخه از سری بازی tekken باشد.
+                                                هیهاچی میشما نیز در نسخه ی قبلی مرده و در این نسخه حضور ندارد. جون
+                                                کازاما که
+                                                Tekken دو
+                                                به بعد به خاطر داستان بازی حضور نداشت نیز در این نسخه حضور دارد
+                                            </p>
+                                            <div class="row mt-4">
+                                                <span class="col-12 col-md-6 game-creator">سازنده ی بازی :</span>
+                                                <span class="col-12 col-md-6 distance-small-screen">Bandai
+                                                    Namco</span>
+                                            </div>
+
+                                            <div
+                                                class="row go-to-post mt-4 d-flex align-items-center justify-content-center">
+                                                <span class="col-12 col-md-6">مشاهده تریلر :</span>
+                                                <a href="">
+                                                    <div
+                                                        class="col-12 col-md-6 btn-go-to-post distance-small-screen d-flex justify-content-center align-items-center">
+                                                        <span>نمایش</span>
+                                                        <i class="fa-solid fa-gamepad"></i>
+                                                        <div class="bg-hover-gradient"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="bg-slider-card"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class=" p-4 div-slider-card">
+
+                                <div class="slider-card row d-flex align-items-center justify-content-center">
+
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="img-hover">
+                                            <img src="image/red dead redemshen.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-6">
+
+                                        <div class="content-slider-game">
+                                            <h3>Red Dead Redemption</h3>
+                                            <div class="mt-3 view">بازدید : <span>180k</span></div>
+                                            <p class="mt-4">این بازی احتمالا آخرین نسخه از سری بازی tekken باشد.
+                                                هیهاچی میشما نیز در نسخه ی قبلی مرده و در این نسخه حضور ندارد. جون
+                                                کازاما که
+                                                Tekken دو
+                                                به بعد به خاطر داستان بازی حضور نداشت نیز در این نسخه حضور دارد
+                                            </p>
+                                            <div class="row mt-4">
+                                                <span class="col-12 col-md-6 game-creator">سازنده ی بازی :</span>
+                                                <span class="col-12 col-md-6 distance-small-screen">Bandai
+                                                    Namco</span>
+                                            </div>
+
+                                            <div
+                                                class="row go-to-post mt-4 d-flex align-items-center justify-content-center">
+                                                <span class="col-12 col-md-6">مشاهده تریلر :</span>
+                                                <a href="">
+                                                    <div
+                                                        class="col-12 col-md-6 btn-go-to-post distance-small-screen d-flex justify-content-center align-items-center">
+                                                        <span>نمایش</span>
+                                                        <i class="fa-solid fa-gamepad"></i>
+                                                        <div class="bg-hover-gradient"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="bg-slider-card"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class=" p-4 div-slider-card">
+
+                                <div class="slider-card row d-flex align-items-center justify-content-center">
+
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="img-hover">
+                                            <img src="image/gtavi.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-6">
+
+                                        <div class="content-slider-game">
+                                            <h3>Gta VI</h3>
+                                            <div class="mt-3 view">بازدید : <span>180k</span></div>
+                                            <p class="mt-4">این بازی احتمالا آخرین نسخه از سری بازی tekken باشد.
+                                                هیهاچی میشما نیز در نسخه ی قبلی مرده و در این نسخه حضور ندارد. جون
+                                                کازاما که
+                                                Tekken دو
+                                                به بعد به خاطر داستان بازی حضور نداشت نیز در این نسخه حضور دارد
+                                            </p>
+                                            <div class="row mt-4">
+                                                <span class="col-12 col-md-6 game-creator">سازنده ی بازی :</span>
+                                                <span class="col-12 col-md-6 distance-small-screen">Bandai
+                                                    Namco</span>
+                                            </div>
+
+                                            <div
+                                                class="row go-to-post mt-4 d-flex align-items-center justify-content-center">
+                                                <span class="col-12 col-md-6">مشاهده تریلر :</span>
+                                                <a href="">
+                                                    <div
+                                                        class="col-12 col-md-6 btn-go-to-post distance-small-screen d-flex justify-content-center align-items-center">
+                                                        <span>نمایش</span>
+                                                        <i class="fa-solid fa-gamepad"></i>
+                                                        <div class="bg-hover-gradient"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="bg-slider-card"></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Our games -->
+
+    <section id="our-games" class="container mt-5">
+        <div class="games-menu row d-flex align-items-center">
+
+            <div class="div-title col-lg-6 d-flex justify-content-start">
+                <h2 class="title">بازی های ما</h2>
+
+                <svg version="1.1" id="svg-title-1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 53.3"
+                    style="enable-background:new 0 0 40 53.3;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: url(#SVGID_1_);
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="43.5769" y1="10.8881" x2="-1.1468"
+                        y2="36.7093" gradientTransform="matrix(1 0 0 -1 0 53.3333)">
+                        <stop offset="0" style="stop-color:#EA3553" />
+                        <stop offset="1" style="stop-color:#E98E1B" />
+                    </linearGradient>
+                    <path class="st0" d="M4.2,48.7L3,49.6C2.7,49.9,2.3,50,1.9,50c-1,0-1.9-0.8-1.9-1.9V20C0,9,9,0,20,0s20,9,20,20v28.1
+	c0,1-0.8,1.9-1.9,1.9c-0.4,0-0.8-0.1-1.2-0.4l-1.2-0.9c-1.4-1.1-3.4-0.9-4.6,0.4l-3.2,3.6c-0.3,0.4-0.9,0.6-1.4,0.6
+	c-0.5,0-1-0.2-1.4-0.6l-2.8-3.2c-1.3-1.5-3.7-1.5-5,0l-2.8,3.2c-0.3,0.4-0.9,0.6-1.4,0.6s-1-0.2-1.4-0.6l-3.2-3.6
+	C7.6,47.7,5.6,47.5,4.2,48.7z M16.7,20c0-1.8-1.5-3.3-3.3-3.3S10,18.2,10,20s1.5,3.3,3.3,3.3S16.7,21.8,16.7,20z M26.7,23.3
+	c1.8,0,3.3-1.5,3.3-3.3s-1.5-3.3-3.3-3.3s-3.3,1.5-3.3,3.3S24.8,23.3,26.7,23.3z" />
+                </svg>
+            </div>
+
+            <div class="menu col-lg-6 mb-3 d-flex justify-content-end distance-small-screen">
+                <ul>
+                    <li class="ps4" data-category="ps4">
+                        <i class="fa-brands fa-playstation"></i>
+                        <div class="bg-hover-gradient"></div>
+                    </li>
+
+                    <li class="xbox" data-category="xbox">
+                        <i class="fa-brands fa-xbox"></i>
+                        <div class="bg-hover-gradient"></div>
+                    </li>
+
+                    <li class="pc" data-category="pc">
+                        <i class="fa-solid fa-computer"></i>
+                        <div class="bg-hover-gradient"></div>
+                    </li>
+
+                    <li class="board" data-category="board">
+                        <i class="fa-solid fa-chess-king"></i>
+                        <div class="bg-hover-gradient"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="games row mt-3">
+
+
+                <div class="d-none d-lg-block col-lg-2 more">
+
+                    <div class="more-btn d-flex justify-content-center align-items-center">
+                        <h5>مشاهده همه</h5>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-10 col-md-12">
+
+                    <div class="row console ps4-game">
+
+                        <div class="col-6 col-md-4 p-2">
+
+                            <div class="game">
+                                <img src="image/tekken8.png" alt="">
+
+                                <div class="description">
+                                    <h5>tekken8</h5>
+                                    <span class="mt-5">سال انتشار : <span>2024</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/red dead redemshen.jpg" alt="">
+                                <div class="div-description">
+                                    <div class="description">
+                                        <h5>Red Dead Redemption 2</h5>
+                                        <span class="mt-5">سال انتشار : <span>2017</span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/efootball.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>eFootball</h5>
+                                    <span class="mt-5">سال انتشار : <span>2023</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/God_of_War.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>God Of War</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Uncharted.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Uncharted 4</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Black_Ops_3.png" alt="">
+
+                                <div class="description">
+                                    <h5>Cod Black ops III</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row console xbox-game">
+
+                        <div class="col-6 col-md-4 p-2">
+
+                            <div class="game">
+                                <img src="image/Dark_Souls.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Dark Souls III</h5>
+                                    <span class="mt-5">سال انتشار : <span>2024</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Far_cry_6_cover.png" alt="">
+                                <div class="div-description">
+                                    <div class="description">
+                                        <h5>Farcry 6</h5>
+                                        <span class="mt-5">سال انتشار : <span>2017</span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Mafia_II_Boxart.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Mafia II</h5>
+                                    <span class="mt-5">سال انتشار : <span>2023</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Need_for_Speed_Heat.png" alt="">
+
+                                <div class="description">
+                                    <h5>Need for Speed Heat</h5>
+                                    <span class="mt-5">سال انتشار : <span>2012</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Tekken_7r.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Tekken7</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Minecraf.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Minecraft</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row  console pc-game">
+
+                        <div class="col-6 col-md-4 p-2">
+
+                            <div class="game">
+                                <img src="image/Dota2.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Dota 2</h5>
+                                    <span class="mt-5">سال انتشار : <span>2015</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Counter-Strike Global Offensive.jpg" alt="">
+                                <div class="div-description">
+                                    <div class="description">
+                                        <h5>Counter-Strike Global Offensive</h5>
+                                        <span class="mt-5">سال انتشار : <span>2017</span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Blur.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Blur</h5>
+                                    <span class="mt-5">سال انتشار : <span>2023</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Left4Dead.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Left 4 Dead</h5>
+                                    <span class="mt-5">سال انتشار : <span>2012</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Rainbow Six.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Rainbow Six</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Counter Strike 1.6.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>Counter Strike 1.6</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row console board-game">
+
+                        <div class="col-6 col-md-4 p-2">
+
+                            <div class="game">
+                                <img src="image/Godfather.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>سناریو پدر خوانده</h5>
+                                    <span class="mt-5">سال انتشار : <span>2015</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/secret army.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>سناریو ارتش سری</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Backagammon.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>تخته نرد</h5>
+                                    <span class="mt-5">سال انتشار : <span>2018</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Billiards.jpg" alt="">
+                                <div class="div-description">
+                                    <div class="description">
+                                        <h5>بیلیارد</h5>
+                                        <span class="mt-5">سال انتشار : <span>2017</span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/Foosball.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>فوتبال دستی</h5>
+                                    <span class="mt-5">سال انتشار : <span>2023</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-md-4 p-2">
+                            <div class="game">
+                                <img src="image/chess.jpg" alt="">
+
+                                <div class="description">
+                                    <h5>شطرنج</h5>
+                                    <span class="mt-5">سال انتشار : <span>2012</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 d-lg-none more distance-small-screen">
+
+                    <div class="more-btn d-flex justify-content-center align-items-center">
+                        <h5>مشاهده همه</h5>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Price table -->
+
+    <section id="price-table-section" class="container mt-5">
+
+        <div class="div-title col-lg-12 d-flex justify-content-start">
+            <h2 class="title">تعرفه ها</h2>
+            <svg version="1.1" id="svg-title-2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 27.2"
+                style="enable-background:new 0 0 35 27.2;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: url(#SVGID_1_);
+                    }
+                </style>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="34.6246" y1="23.4971" x2="0.3721"
+                    y2="3.7214">
+                    <stop offset="0" style="stop-color:#EA3553" />
+                    <stop offset="1" style="stop-color:#E98E1B" />
+                </linearGradient>
+                <path class="st0" d="M0,4.9v18.8c0,1.1,0.6,2.1,1.6,2.5c5.3,2,10.6,0.6,15.9-0.7c4.8-1.2,9.7-2.5,14.5-1.1c1.4,0.4,3-0.6,3-2V3.5
+           c0-1.1-0.6-2.1-1.6-2.5c-5.3-2-10.6-0.6-15.9,0.7C12.7,3,7.8,4.2,3,2.9C1.6,2.5,0,3.4,0,4.9z M17.5,19.4c-2.7,0-4.9-2.6-4.9-5.8
+           s2.2-5.8,4.9-5.8s4.9,2.6,4.9,5.8S20.2,19.4,17.5,19.4z M3.9,19.4c2.1,0,3.9,1.7,3.9,3.9H3.9V19.4z M7.8,6.8c0,2.1-1.7,3.9-3.9,3.9
+           V6.8H7.8z M31.1,16.5v3.9h-3.9C27.2,18.3,29,16.5,31.1,16.5z M27.2,3.9h3.9v3.9C29,7.8,27.2,6,27.2,3.9z" />
+            </svg>
+        </div>
+
+        <div class="row mt-3 d-flex justify-content-center">
+
+            <div class="col-11 col-sm-11 col-md-6 col-lg-4 distance-small-screen-pt price-table-hover">
+                <div class="swiper xboxSlider">
+                    <div class="swiper-wrapper">
+
+                        <div class="price-table xbox-price swiper-slide">
+                            <div class="first-position-circle">
+                                <div class="second-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-xbox"></i>
+                                </div>
+                                <div class="first-circle"></div>
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <span class="facilities-title">اینترنت</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-gamepad"></i></span>
+                                        <span class="facilities-title text-decoration-line-through">24+
+                                            <span>تومن</span></span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-headset"></i></span>
+                                        <span class="facilities-title">هدست</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-video"></i></span>
+                                        <span class="facilities-title">رکورد گیم</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="status-title xbox-bg-status-title">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <h5>آنلاین</h5>
+                                </div>
+                            </div>
+
+                            <div class="first-bg">
+                                <div class="position-bg">
+                                    <div class="second-bg"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="price-table xbox-price swiper-slide">
+                            <div class="first-position-circle">
+                                <div class="second-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-xbox"></i>
+                                </div>
+                                <div class="first-circle"></div>
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <span class="facilities-title  text-decoration-line-through">اینترنت</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-gamepad"></i></span>
+                                        <span class="facilities-title">24+
+                                            <span>تومن</span></span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-headset"></i></span>
+                                        <span class="facilities-title">هدست</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-video"></i></span>
+                                        <span class="facilities-title">رکورد گیم</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="status-title xbox-bg-status-title">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <h5>آفلاین</h5>
+                                </div>
+                            </div>
+
+                            <div class="first-bg">
+                                <div class="position-bg">
+                                    <div class="second-bg"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div
+                class="col-11 col-sm-11 col-md-6 col-lg-4 distance-small-screen distance-small-screen-pt price-table-hover">
+                <div class="swiper playstationSlider">
+                    <div class="swiper-wrapper">
+
+                        <div class="price-table playstation-price swiper-slide">
+                            <div class="first-position-circle">
+                                <div class="second-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-playstation"></i>
+                                </div>
+                                <div class="first-circle"></div>
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <span class="facilities-title">اینترنت</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-gamepad"></i></span>
+                                        <span class="facilities-title text-decoration-line-through">24+
+                                            <span>تومن</span></span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-headset"></i></span>
+                                        <span class="facilities-title">هدست</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-video"></i></span>
+                                        <span class="facilities-title">رکورد گیم</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                            <div class="d-flex justify-content-center">
+                                <div class="status-title playstation-bg-status-title">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <h5>آنلاین</h5>
+                                </div>
+                            </div>
+
+                            <div class="first-bg">
+                                <div class="position-bg">
+                                    <div class="second-bg"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="price-table playstation-price swiper-slide">
+                            <div class="first-position-circle">
+                                <div class="second-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-playstation"></i>
+                                </div>
+                                <div class="first-circle"></div>
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <span class="facilities-title text-decoration-line-through">اینترنت</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-gamepad"></i></span>
+                                        <span class="facilities-title">24+ <span>تومن</span></span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-headset"></i></span>
+                                        <span class="facilities-title">هدست</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-video"></i></span>
+                                        <span class="facilities-title">رکورد گیم</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                            <div class="d-flex justify-content-center">
+                                <div class="status-title playstation-bg-status-title">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <h5>آفلاین</h5>
+                                </div>
+                            </div>
+
+                            <div class="first-bg">
+                                <div class="position-bg">
+                                    <div class="second-bg"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-11 col-sm-11 col-md-6 col-lg-4 distance-small-screen price-table-hover">
+                <div class="swiper pcSlider">
+                    <div class="swiper-wrapper">
+
+                        <div class="price-table pc-price swiper-slide">
+                            <div class="first-position-circle">
+                                <div class="second-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-computer"></i>
+                                </div>
+                                <div class="first-circle"></div>
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <span class="facilities-title">اینترنت</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-gamepad"></i></span>
+                                        <span class="facilities-title text-decoration-line-through">24+
+                                            <span>تومن</span></span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-headset"></i></span>
+                                        <span class="facilities-title">هدست</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-video"></i></span>
+                                        <span class="facilities-title">رکورد گیم</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="status-title pc-bg-status-title">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <h5>آنلاین</h5>
+                                </div>
+                            </div>
+
+                            <div class="first-bg">
+                                <div class="position-bg">
+                                    <div class="second-bg"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="price-table pc-price swiper-slide">
+                            <div class="first-position-circle">
+                                <div class="second-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-computer"></i>
+                                </div>
+                                <div class="first-circle"></div>
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-wifi"></i></span>
+                                        <span class="facilities-title text-decoration-line-through">اینترنت</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-gamepad"></i></span>
+                                        <span class="facilities-title">24+ <span>تومن</span></span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-headset"></i></span>
+                                        <span class="facilities-title">هدست</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex">
+                                        <span><i class="fa-solid fa-video"></i></span>
+                                        <span class="facilities-title">رکورد گیم</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="status-title pc-bg-status-title">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <h5>آفلاین</h5>
+                                </div>
+                            </div>
+
+                            <div class="first-bg">
+                                <div class="position-bg">
+                                    <div class="second-bg"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Competitions -->
+
+    <section id="competitions" class="container mt-5">
+
+        <div class="div-title container d-flex justify-content-start">
+            <h2 class="title">مسابقات این ماه</h2>
+            <svg version="1.1" id="svg-title-2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 31.1"
+                style="enable-background:new 0 0 35 31.1;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: url(#SVGID_2);
+                    }
+                </style>
+                <linearGradient id="SVGID_2" gradientUnits="userSpaceOnUse" x1="29.8715" y1="21.7332" x2="0.2022"
+                    y2="4.6036">
+                    <stop offset="0" style="stop-color:#EA3553" />
+                    <stop offset="1" style="stop-color:#E98E1B" />
+                </linearGradient>
+                <path class="st0" d="M24.3,0H10.7C9.1,0,7.8,1.3,7.8,2.9c0,0.3,0,0.6,0,1H1.5C0.7,3.9,0,4.5,0,5.3c0,5.6,2,9.5,4.8,12.2
+           c2.7,2.6,6,3.9,8.4,4.6c1.4,0.4,2.4,1.6,2.4,2.8c0,1.3-1,2.3-2.3,2.3h-1.6c-1.1,0-1.9,0.9-1.9,1.9s0.9,1.9,1.9,1.9h11.7
+           c1.1,0,1.9-0.9,1.9-1.9s-0.9-1.9-1.9-1.9h-1.6c-1.3,0-2.3-1-2.3-2.3c0-1.2,1-2.4,2.4-2.8c2.4-0.7,5.7-2,8.4-4.6
+           C33,14.9,35,11,35,5.3c0-0.8-0.7-1.5-1.5-1.5h-6.4c0-0.3,0-0.6,0-1C27.2,1.3,25.9,0,24.3,0z M3,6.8h5.1c0.6,5.5,1.8,9.1,3.2,11.6
+           c-1.5-0.7-3.1-1.6-4.4-2.9C4.9,13.6,3.3,10.8,3,6.8L3,6.8z M28.2,15.5c-1.4,1.3-2.9,2.3-4.4,2.9c1.4-2.4,2.6-6.1,3.2-11.6H32
+           C31.7,10.8,30.1,13.6,28.2,15.5L28.2,15.5z" />
+            </svg>
+        </div>
+
+        <div class="row mt-3 d-flex justify-content-center">
+
+            <div class="swiper competitionsSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="competition swiper-slide">
+                        <img src="image/News/dota 2.jpg" alt="">
+
+                        <div class="description-competition">
+                            <h3 class="title mb-3">Dota 2</h3>
+
+                            <p class="description">این یک مسابقه بین تیم های Azhdar و Shater است که در 6 راند برگذار
+                                میشود.
+                                از شما عزیزان دعوت میشود به دیدن این مسابقه بیاید
+                            </p>
+                        </div>
+
+                        <div class="data text-center">
+                            <div>بیست و پنجم</div>
+                            <h5 class="mt-3"><span>18</span> : <span>00</span></h5>
+                        </div>
+                    </div>
+
+                    <div class="competition swiper-slide">
+                        <img src="image/News/MWIII.jpg" alt="">
+
+                        <div class="description-competition">
+
+                            <h3 class="title mb-3">MDW III</h3>
+
+                            <p class="description">این یک مسابقه بین تیم های Azhdar و Shater است که در 6 راند برگذار
+                                میشود.
+                                از شما عزیزان دعوت میشود به دیدن این مسابقه بیاید
+                            </p>
+
+                        </div>
+
+                        <div class="data text-center">
+                            <div>دوم</div>
+                            <h5 class="mt-3"><span>22</span> : <span>30</span></h5>
+                        </div>
+
+                    </div>
+
+                    <div class="competition swiper-slide">
+                        <img src="image/News/minecraftBedwars.jpg" alt="">
+
+                        <div class="description-competition">
+
+                            <h3 class="title mb-3">Minecraf Bedwars</h3>
+
+                            <p class="description">این یک مسابقه بین تیم های Azhdar و Shater است که در 6 راند برگذار
+                                میشود.
+                                از شما عزیزان دعوت میشود به دیدن این مسابقه بیاید
+                            </p>
+
+                        </div>
+
+                        <div class="data text-center">
+                            <div>ششم</div>
+                            <h5 class="mt-3"><span>17</span> : <span>30</span></h5>
+                        </div>
+
+                    </div>
+
+                    <div class="competition swiper-slide">
+                        <img src="image/News/Counter-Strike.jpg" alt="">
+
+                        <div class="description-competition">
+
+                            <h3 class="title mb-3">کانتر 1.6</h3>
+
+                            <p class="description">این یک مسابقه بین تیم های Azhdar و Shater است که در 6 راند برگذار
+                                میشود.
+                                از شما عزیزان دعوت میشود به دیدن این مسابقه بیاید
+                            </p>
+
+                        </div>
+
+                        <div class="data text-center">
+                            <div>سی ام</div>
+                            <h5 class="mt-3"><span>10</span> : <span>00</span></h5>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+
+                    <h2 class="footer-heading"><a href="#" class="logo">Gamenet.ir</a></h2>
+
+                    <ul class="menu">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره ی ما</a></li>
+                        <li><a href="#">بازی ها</a></li>
+                        <li><a href="#">تعرفه ها</a></li>
+                        <li><a href="#">مسابقات</a></li>
+                    </ul>
+
+                    <ul class="ftco-footer-social p-0">
+                        <li class="ftco-animate"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="ftco-animate"><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                        <li class="ftco-animate"><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                        <li class="ftco-animate"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <div class="copyright">
+                        <span>تمامی حقوق محفوظ است</span>
+                        <span> | </span>
+                        <span>ساخته شده با</span>
+                        <span><i class="fa-solid fa-mug-hot fa-beat"></i></span>
+                        <span>و</span>
+                        <span><i class="fa-solid fa-heart fa-beat"></i></span>
+                        <span>توسط</span>
+                        <span class="developer"><a href="">Alirez Bisout</a></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- script & bootstrap -->
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+
+    <!-- slider -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+</body>
+
+</html>
